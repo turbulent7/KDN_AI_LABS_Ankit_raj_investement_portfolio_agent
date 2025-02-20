@@ -2,8 +2,17 @@ from flask import Flask, request, jsonify
 import yfinance as yf
 import requests
 import os
+from flask import Flask, jsonify
 
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return jsonify({"message": "Welcome to the Investment Analyst Backend API"}), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
 # SerpAPI credentials
 SERPAPI_KEY = os.getenv("SERP_API_KEY")
