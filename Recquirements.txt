@@ -1,0 +1,12 @@
+openai 
+python-dotenv 
+langchain 
+langchain-openai 
+yfinance 
+phidata
+yfinance 
+serpapi 
+pandas
+google-search-results
+requests
+
