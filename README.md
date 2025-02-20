@@ -79,4 +79,5 @@ The **Investment Analyst** project provides a **comprehensive financial research
 
 🚀 **Future improvements** will enhance the **intelligence and automation** of financial decision-making, making this a must-have tool for investors and analysts alike!
 
+## **📌 Demo **
 
