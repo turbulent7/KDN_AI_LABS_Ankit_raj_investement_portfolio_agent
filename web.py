@@ -75,8 +75,8 @@ st.subheader("Enter Your Portfolio")
 portfolio = {}
 num_stocks = st.number_input("How many stocks do you want to add?", min_value=1, max_value=10, value=4)
 for i in range(num_stocks):
-    stock = st.text_input(f"Stock Symbol {i+1}", "AAPL").upper()
-    shares = st.number_input(f"Shares of {stock}", min_value=1, value=10)
+    stock = st.text_input(f"Stock Symbol {i+1}", "AAPL", key=f"stock_{i}").upper()
+    shares = st.number_input(f"Shares of {stock}", min_value=1, value=10, key=f"shares_{i}")
     portfolio[stock] = shares
 
 # User inputs for risk tolerance and exit period
@@ -126,4 +126,5 @@ def analyze_portfolio(portfolio, risk_tolerance, exit_period):
 # Run Analysis
 if st.button("Analyze Portfolio"):
     analyze_portfolio(portfolio, risk_tolerance, exit_period)
+
 
