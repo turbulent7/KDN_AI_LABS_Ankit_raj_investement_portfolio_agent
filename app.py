@@ -4,10 +4,10 @@ from langchain_core.messages import HumanMessage
 
 load_dotenv()
 
-PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
+SERP_API_KEY=os.environ.get('SERP_API_KEY')
 OPENAI_API_KEY=os.environ.get('OPENAI_API_KEY')
 
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
+os.environ["SERP_API_KEY"] = SERP_API_KEY
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 from langchain_openai import ChatOpenAI
