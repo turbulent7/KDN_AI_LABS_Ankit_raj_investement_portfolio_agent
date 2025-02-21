@@ -9,4 +9,5 @@ serpapi
 pandas
 google-search-results
 requests
+streamlit
 
