@@ -10,4 +10,5 @@ pandas
 google-search-results
 requests
 streamlit
+plotly.express
 
